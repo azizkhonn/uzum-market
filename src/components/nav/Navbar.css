@@ -1,0 +1,398 @@
+.navWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+.navbarCall {
+    display: flex;
+    justify-content: space-between;
+    width: 105.5%;
+    background-color: #f0f2f5;
+    padding: 4px 139.5px;
+    position: absolute;
+    top: 0;
+}
+
+.NavContainer {
+    gap: 10px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navItem {
+    display: flex;
+    align-items: center;
+    gap: 38.7px;
+    padding: 13px 0px;
+}
+
+
+.navLink {
+    color: rgb(110, 108, 108);
+    font-weight: 400;
+    font-size: 15px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navLink:hover {
+    color: #000;
+}
+
+.hoverLink::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.3s;
+    margin-top: 8px;
+}
+
+.navLink:hover+.hoverLink::after {
+    width: 100%;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    margin-top: -8px;
+}
+
+.dropBtn {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgb(110, 108, 108);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.dropBtn:hover {
+    color: #000;
+}
+
+.logoItems {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.searchBar {
+    border-radius: 4px 4px 4px 4px;
+    outline: none;
+    padding: 11px 18px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    width: 520px;
+    height: 42px;
+}
+
+
+.catalogBtn {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px 4px 4px 4px;
+    outline: none;
+    padding: 9px 10px;
+    width: 125px;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #e5e5ff;
+    color: #7000ff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    &:hover {
+        background-color: #ceccff;
+        color: #7000ff;
+    }
+}
+
+
+.searchBtn {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0px 3px 3px 0px;
+    outline: none;
+    padding: 10.2px 0px;
+    width: 80.2px;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -91px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.navLinkItem {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-weight: 500;
+    color: #000;
+    font-size: 13px;
+}
+
+
+.navbarBtns {
+    margin-left: -85px;
+    display: flex;
+    gap: 10px;
+}
+
+
+.catalogBtnTop {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px 4px 4px 4px;
+    outline: none;
+    padding: 9px 5px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    &:hover {
+        background-color: #dee0e5;
+    }
+}
+
+.catalogItems {
+    width: 130px;
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.ItemsWrapTopBtn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #000;
+}
+
+.ItemsWrapTopBtnShop {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #7000ff;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.ItemsWrapTopBtnLink {
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 75px;
+}
+
+.language-switcherRow {
+    display: flex;
+    gap: 10px;
+}
+
+.ItemsWrapTopBtnLink2{
+    color: #000;
+}
+
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 79%;
+    max-width: 973px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    min-height: 570px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.liked-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.ItemsWrapTopBtnRus{
+    display: flex;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    align-items: center;
+    gap: 5px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #000;
+    cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+    .navbarCall {
+        display: flex;
+        justify-content: space-between;
+        width: 100.7%;
+        background-color: #f0f2f5;
+        padding: 4px 50.5px;
+        position: absolute;
+        top: 0;
+    }
+
+    .searchBar {
+        border-radius: 4px 4px 4px 4px;
+        outline: none;
+        padding: 5px 18px;
+        font-size: 15px;
+        border: 1px solid #ccc;
+        width: 416px;
+        height: 42px;
+    }
+
+    .searchBtn{
+        width: 89.3px;
+    }
+    
+    .logoItems{
+        padding-top: 5px;
+        display: flex;
+        margin-left: -80px;
+        gap: 7px;
+    }
+
+    .catalogBtn {
+        font-family: 'Roboto', sans-serif;
+        border-radius: 4px 4px 4px 4px;
+        outline: none;
+        padding: 9px 10px;
+        width: 112px;
+        font-size: 15px;
+        font-weight: 400;
+        background-color: #e5e5ff;
+        color: #7000ff;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .navbarBtns  {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: #333;
+        margin-left: -72.2px;
+    }
+
+    .catalogBtnTop {
+        margin-left: -24px;
+    }
+
+    .navItem {
+        display: flex;
+        align-items: center;
+        gap: 25.2px;
+        padding: 13px 0px;
+        margin-left: -74px;
+    
+    }
+
+    .logoContainer {
+        display: flex;
+        align-items: center;
+        gap: 1px;
+    }
+
+  
+}
